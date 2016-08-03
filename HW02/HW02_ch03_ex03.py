@@ -39,15 +39,51 @@
 ################################################################################
 # Write your functions below:
 # Body
+def do_twice(f,val):
+	""" Calls a function with one argument twice"""
+	f(val)
+	f(val)
+
+
+def do_four(f,val):
+	""" Calls a function with one argument twice"""
+	do_twice(f,val)
+	f(val)
+	f(val)
+
+
+def print_row_boundary(n):
+	""" Prints the row boundary of the grid based on its dimensions """
+	row_boundary = "+" + "-" * 4
+	print((row_boundary*n)+"+")
+
+def print_cell_area(n):
+	""" Prints the column boundary and the cell area of the grid based on its dimensions """
+	cell_area = " " * 4
+	column_boundary = "|"
+	print((column_boundary+cell_area) * (n + 1),)
 
 
 
+def two_by_two():
+	
+	n=2 # Dimension of the square grid
+	
+	print_row_boundary(n)
+	do_four(print_cell_area,n)
+	print_row_boundary(n)
+	do_four(print_cell_area,n)
+	print_row_boundary(n)
 
+def four_by_four():
 
-
-
-
-
+	n=4 # Dimension of the square grid
+	
+	print_row_boundary(n)
+	do_four(print_cell_area,n)
+	print_row_boundary(n)
+	do_four(print_cell_area,n)
+	print_row_boundary(n)
 
 
 
@@ -60,6 +96,8 @@ def main():
     four_by_four()
     """
     print("Hello World!")
+    two_by_two()
+    four_by_four()
     
 
 

@@ -30,8 +30,21 @@
 # Body
 
 
+def do_twice(f,value):
+	f(value)
+	f(value)
 
+def print_spam():
+	print('spam')
 
+def print_twice(s):
+	print(s)
+	print(s)
+
+def do_four(f,value):
+	do_twice(f,value)
+	f(value)
+	f(value)
 
 
 
@@ -43,6 +56,7 @@ def main():
     do_four(print_twice, [some_value])
     """
     print("Hello World!")
+    do_four(print_twice,"Go Bears!")
     
 
 

@@ -21,13 +21,29 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a,b,c,n):
 
+	lhs = (a**n) + (b**n) # Left Hand Side of Fermat's equation
+	rhs = c**n # Right Hand Side of Fermat's equation
 
+	if(lhs == rhs and n > 2):
+		print("Holy smokes, Fermat was wrong!")
+	else :
+		print("No, that doesn't work.")
 
+def check_fermat_ints() :
 
-
-
-
+	print("Fermat's Last Theorem says that there are no positive integers a, b, and c such that \n\t\t a^n + b^n = c^n \n for any values of n greater than 2")
+	print("To test if this out, enter values of a,b,c and n")
+	print("a = ",end = ' ')
+	a = int(input())
+	print("b = ",end = ' ')
+	b = int(input())
+	print("c = ",end = ' ')
+	c = int(input())
+	print("n = ", end = ' ')
+	n = int(input())
+	check_fermat(a,b,c,n)
 
 # Write your functions above:
 ################################################################################
@@ -40,6 +56,7 @@ def main():
     check_fermat()
     """
     print("Hello World!")
+    check_fermat_ints()
 
 
 

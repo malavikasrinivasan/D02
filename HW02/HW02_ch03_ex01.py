@@ -15,8 +15,16 @@
 # Write your function below:
 # Body
 
+def right_justify(s):
+	""" This function right justifies your string with enough leading
+		spaces so that the last letter of the string is in the 70th 
+		column of the display """
 
+	display_size = 70
+	len_of_s = len(s)
+	number_of_spaces_needed = display_size - len_of_s
 
+	print(" " * number_of_spaces_needed + s)
 
 
 

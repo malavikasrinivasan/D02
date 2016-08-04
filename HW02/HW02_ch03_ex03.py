@@ -84,6 +84,11 @@ def four_by_four():
 	print_row_boundary(n)
 	do_four(print_cell_area,n)
 	print_row_boundary(n)
+	do_four(print_cell_area,n)
+	print_row_boundary(n)
+	do_four(print_cell_area,n)
+	print_row_boundary(n)
+
 
 
 
